@@ -16,7 +16,7 @@ function App() {
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       //Update isUnlocked state based on the result
-      setIsUnlocked(e === '110524');
+      setIsUnlocked(e.target.value === '110524');
 
       //setIsUnlocked(compare(password, 'onlybim'))
     }
