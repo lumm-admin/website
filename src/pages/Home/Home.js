@@ -28,14 +28,14 @@ function HeroSection() {
       sx={{
         position: 'relative',
         width: '100%',
-        height: '100vh',
         zIndex: 10,
+        backgroundColor: 'primary.main',
       }}
     >
       <Box
         style={{
           width: '100%',
-          height: '100vh',
+          height: 'calc(92vh - 110px)',
           overflow: 'hidden',
           position: 'relative',
           top: -1,
