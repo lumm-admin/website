@@ -75,20 +75,21 @@ function Navbar({}) {
         <Container
           sx={{
             display: 'flex',
+            flexDirection: { xs: 'row-reverse', sm: 'row' },
             justifyContent: 'space-between',
             alignItems: 'center',
-            padding: '1rem 0',
             height: '110px',
           }}
         >
           <Typography
             component={RouterLink}
             to='/#info'
-            variant='h4'
+            variant='body1'
             sx={{
               color: 'white',
               textTransform: 'uppercase',
               textDecoration: 'none',
+              textAlign: 'right',
             }}
           >
             Infos pratiques
@@ -98,10 +99,11 @@ function Navbar({}) {
               width: '170px',
               height: '110px',
               backgroundColor: 'white',
-              position: 'absolute',
               top: '0',
               left: '50%',
-              transform: 'translateX(-50%)',
+              position: { xs: 'static', sm: 'absolute' },
+
+              transform: { xs: '', sm: 'translateX(-50%)' },
             }}
           >
             <Box
@@ -129,18 +131,19 @@ function Navbar({}) {
             </Box>
           </Box>
           <Typography
-            component={RouterLink}
-            to='/#about'
+            href='mailto:contact@lumm.love'
+            component='a'
             variant='h4'
             sx={{
               color: 'white',
               textTransform: 'uppercase',
               textDecoration: 'none',
+              display: { xs: 'none', sm: 'block' },
             }}
           >
-            La lümm c'est quoi enft
+            Contact
           </Typography>
-          <IconButton
+          {/* <IconButton
             onClick={toggleDrawer(true)}
             sx={{
               color: 'white',
@@ -148,7 +151,7 @@ function Navbar({}) {
             }}
           >
             <i className='fas fa-bars'></i>
-          </IconButton>
+          </IconButton> */}
         </Container>
       </AppBar>
       {drawer}
