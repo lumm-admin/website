@@ -29,7 +29,7 @@ let theme = createTheme({
       fontFamily: '"OldLondon", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: 48,
-      letterSpacing: '-4%',
+      //letterSpacing: '-4%',
       lineHeight: 1.25,
     },
     h3: {
