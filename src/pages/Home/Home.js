@@ -39,7 +39,7 @@ function HeroSection() {
       <Box
         style={{
           width: '100%',
-          height: 'calc(92vh)',
+          height: 'calc(90vh)',
           overflow: 'hidden',
           position: 'relative',
         }}
@@ -87,6 +87,7 @@ function ProgramSection() {
         position: 'relative',
         //top: '-0.8em',
       }}
+      id='info'
     >
       <Typography
         variant='h1'

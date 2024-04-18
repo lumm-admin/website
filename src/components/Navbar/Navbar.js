@@ -17,7 +17,7 @@ import {
 import { Box } from '@mui/system';
 import { HashLink as RouterLink } from 'react-router-hash-link';
 
-import LogoTurningVideo from '../../assets/videos/logo-turning.mp4';
+import LogoTurningVideo from '../../assets/images/giflumm.gif';
 
 function Navbar({}) {
   const { drawerOpened, toggleDrawer } = NavbarLogic();
@@ -98,7 +98,6 @@ function Navbar({}) {
             sx={{
               width: '170px',
               height: '110px',
-              backgroundColor: 'white',
               top: '0',
               left: '50%',
               position: { xs: 'static', sm: 'absolute' },
@@ -120,14 +119,11 @@ function Navbar({}) {
                   position: 'absolute',
                   top: '50%',
                   transform: 'translateY(-50%)',
+                  backgroundColor: 'transparent',
                 }}
-                component='video'
-                autoPlay
-                loop
-                muted
-              >
-                <source src={LogoTurningVideo} />
-              </Box>
+                component='img'
+                src={LogoTurningVideo}
+              />
             </Box>
           </Box>
           <Typography
