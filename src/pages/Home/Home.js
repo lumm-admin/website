@@ -21,6 +21,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import EmptySpace from '../../components/EmptySpace/EmptySpace';
 import LogoTurningVideo from '../../assets/videos/logo-turning.mp4';
 import BackgroundDancingVideo from '../../assets/videos/background-dancing.mp4';
+import HourParagraph from '../../components/HourParagraph/HourParagraph';
+import SquarredLine from '../../components/SquarredLine/SquarredLine';
 
 function HeroSection() {
   return (
@@ -38,7 +40,6 @@ function HeroSection() {
           height: 'calc(92vh - 110px)',
           overflow: 'hidden',
           position: 'relative',
-          top: -1,
         }}
       >
         <Box
@@ -64,6 +65,18 @@ function HeroSection() {
 }
 
 function ProgramSection() {
+  const hourProgram = [
+    {
+      hour: '17',
+      text: 'Ouverture des portes<br/>Stands artisans + expositions<br/>Bar Satellite<br/> Snacks Lümm',
+    },
+    { hour: '18', text: 'Défilé de mode par le pôle mode d’Artepoly : SWAG' },
+    {
+      hour: '21',
+      text: "Ouverture de l'espace tripostal<br/>Début des DJ sets<br/>Bars + Snacks Lümm",
+    },
+    { hour: '03', text: 'Fin de Lümm x SWAG' },
+  ];
   return (
     <Box
       sx={{
@@ -71,7 +84,6 @@ function ProgramSection() {
         width: '100%',
         position: 'relative',
         //top: '-0.8em',
-        letterSpacing: '-0.35em',
       }}
     >
       <Typography
@@ -86,7 +98,74 @@ function ProgramSection() {
         <br />
         Lümm x Swag
       </Typography>
-      <Box></Box>
+      <EmptySpace height={80} />
+      <Container
+        maxWidth='md'
+        sx={{
+          flexDirection: 'column',
+          width: '100%',
+          display: { xs: 'none', sm: 'flex' },
+          position: 'relative',
+        }}
+      >
+        {hourProgram.map((el, id) => {
+          const rightAligned = id % 2 === 0;
+          return (
+            <Box
+              sx={{
+                width: '50%',
+                alignSelf: rightAligned ? 'flex-start' : 'flex-end',
+                position: 'relative',
+              }}
+            >
+              <HourParagraph
+                {...el}
+                rightAligned={rightAligned}
+                sx={{
+                  position: 'relative',
+                  /* top: '50%',
+                  transform: 'translateY(-50%)', */
+
+                  ...(rightAligned ? { right: '2em' } : { left: '2em' }),
+                }}
+              />
+            </Box>
+          );
+        })}
+        <SquarredLine
+          sx={{
+            height: 'calc(100% + 1em)',
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+          }}
+        />
+      </Container>
+      <Container
+        maxWidth='md'
+        sx={{
+          flexDirection: 'row',
+          width: '100%',
+          display: { xs: 'flex', sm: 'none' },
+        }}
+      >
+        <SquarredLine />
+
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '100%',
+            gap: '2em',
+            ml: '2em',
+          }}
+        >
+          {hourProgram.map((el, id) => (
+            <HourParagraph {...el} sx={{}} />
+          ))}
+        </Box>
+      </Container>
     </Box>
   );
 }

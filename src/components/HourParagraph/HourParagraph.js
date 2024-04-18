@@ -3,20 +3,26 @@ import Palette from '../../theme/palette';
 import LineLogo from '../LineLogo/LineLogo';
 import Helper from '../../helpers';
 
-function HourParagraph({ left, hour, text }) {
+function HourParagraph({ rightAligned, hour, text, sx }) {
   return (
     <Box
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: left ? 'flex-start' : 'flex-end',
+        alignItems: rightAligned ? 'flex-end' : 'flex-start',
         justifyContent: 'center',
+        ...sx,
       }}
     >
-      <Typography variant='h3'>{hour + 'h00'}</Typography>
-      <Typography variant='body1' sx={{ textAlign: left ? 'left' : 'right' }}>
-        text
-      </Typography>
+      <Typography variant='h2'>{hour + 'h00'}</Typography>
+      {text.split('<br/>').map((line, index) => (
+        <Typography
+          variant={'body1'}
+          sx={{ textAlign: rightAligned ? 'right' : 'left' }}
+        >
+          {line}
+        </Typography>
+      ))}
     </Box>
   );
 }
