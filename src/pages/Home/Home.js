@@ -37,7 +37,7 @@ function HeroSection() {
       <Box
         style={{
           width: '100%',
-          height: 'calc(92vh - 110px)',
+          height: 'calc(92vh)',
           overflow: 'hidden',
           position: 'relative',
         }}
@@ -70,7 +70,7 @@ function ProgramSection() {
       hour: '17',
       text: 'Ouverture des portes<br/>Stands artisans + expositions<br/>Bar Satellite<br/> Snacks Lümm',
     },
-    { hour: '18', text: 'Défilé de mode par le pôle mode d’Artepoly : SWAG' },
+    { hour: '18', text: 'Défilé par le pôle mode d’Artepoly : SWAG' },
     {
       hour: '21',
       text: "Ouverture de l'espace tripostal<br/>Début des DJ sets<br/>Bars + Snacks Lümm",

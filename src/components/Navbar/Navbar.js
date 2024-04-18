@@ -68,7 +68,7 @@ function Navbar({}) {
       <AppBar
         elevation={0}
         sx={{
-          position: 'relative',
+          position: 'absolute',
           backgroundColor: 'primary',
         }}
       >

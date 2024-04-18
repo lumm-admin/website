@@ -103,7 +103,7 @@ let theme = createTheme({
   components: {
     MuiAppBar: {
       defaultProps: {
-        color: 'primary',
+        color: 'transparent',
       },
     },
     MuiButtonBase: {
