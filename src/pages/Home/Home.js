@@ -24,6 +24,7 @@ import BackgroundDancingVideo from '../../assets/videos/background-dancing.mp4';
 import HourParagraph from '../../components/HourParagraph/HourParagraph';
 import SquarredLine from '../../components/SquarredLine/SquarredLine';
 import Map from '../../components/Map/Map';
+import Footer from '../../components/Footer/Footer';
 
 function HeroSection() {
   return (
@@ -183,7 +184,7 @@ function PlaceSection() {
         }}
         color='white'
       >
-        Lieu
+        Accès
       </Typography>
       <Container
         sx={{
@@ -197,7 +198,17 @@ function PlaceSection() {
         }}
       >
         <Typography textAlign='right' minWidth='150px' color='white'>
-          <Link>La Rasude</Link> <br />
+          <Link
+            sx={{
+              color: 'white',
+              fontWeight: 'bold',
+              textDecoration: 'underline',
+            }}
+            href='https://labor-lausanne.ch/'
+          >
+            La Rasude
+          </Link>{' '}
+          <br />
           Place de la Gare 1<br />
           1003 Lausanne
           <br />
@@ -219,6 +230,7 @@ function Home() {
       <HeroSection />
       <ProgramSection />
       <PlaceSection />
+      <Footer />
     </>
   );
 }

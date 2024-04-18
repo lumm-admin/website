@@ -5,79 +5,116 @@ import {
   Button,
   Container,
   Divider,
+  Link,
   TextField,
   Typography,
 } from '@mui/material';
 
 import Palette from '../../theme/palette';
-import { FaTiktok, FaInstagram, FaYoutube } from 'react-icons/fa';
-
-import NoisyContainer from '../NoisyContainer/NoisyContainer';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import EmptySpace from '../EmptySpace/EmptySpace';
+import { FaEnvelope, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
-  const { STATE_GREY, NIGHT } = Palette();
+  const { LUMM_RED } = Palette();
 
   return (
-    <NoisyContainer>
-      <Container
-        sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+    <Container
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        my: 20,
+        gap: '0.5em',
+      }}
+    >
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          textDecoration: 'none',
+        }}
+        component='a'
+        href='https://www.instagram.com/lumm_love'
       >
-        <SectionTitle title='Get an alert when' highlight='we lauch' />
-        <EmptySpace under='h2' />
-        <Divider sx={{ width: '100%', mt: 5 }} />
+        <Typography
+          variant='body1'
+          sx={{ color: 'primary.main', fontWeight: 'bold' }}
+        >
+          @lumm_love
+        </Typography>
         <Box
           sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            mt: 3,
-            mb: 10,
+            position: 'relative',
+            top: '0.2em',
+            ml: 1,
           }}
         >
-          <Box
-            color={STATE_GREY}
-            sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              gap: 5,
-            }}
-          >
-            <Typography variant='subtitle2'>©IGLOW® 2023</Typography>
-            <Typography variant='subtitle2'>Legal Notice</Typography>
-            <Typography variant='subtitle2'>Privacy Policy</Typography>
-          </Box>
-          <Box
-            color={STATE_GREY}
-            sx={{ display: 'flex', flexDirection: 'row', gap: 5 }}
-          >
-            <Avatar sx={{ backgroundColor: NIGHT }}>
-              <FaInstagram
-                component='a'
-                href='https://www.instagram.com/okalo.ch'
-                color='white'
-              />
-            </Avatar>
-            <Avatar sx={{ backgroundColor: NIGHT }}>
-              <FaTiktok
-                component='a'
-                href='https://www.tiktok.com/'
-                color='white'
-              />
-            </Avatar>
-            <Avatar sx={{ backgroundColor: NIGHT }}>
-              <FaYoutube
-                component='a'
-                href='https://www.youtube.com/'
-                color='white'
-              />
-            </Avatar>
-          </Box>
+          <FaInstagram color={LUMM_RED} />
         </Box>
-      </Container>
-    </NoisyContainer>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          textDecoration: 'none',
+        }}
+        component='a'
+        href='https://www.youtube.com/@LUMMMMM'
+      >
+        <Link
+          variant='body1'
+          sx={{ color: 'primary.main', fontWeight: 'bold' }}
+        >
+          @LUMMMMM
+        </Link>
+        <Box
+          sx={{
+            position: 'relative',
+            top: '0.2em',
+            ml: 1,
+          }}
+        >
+          <FaYoutube color={LUMM_RED} />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          textDecoration: 'none',
+        }}
+        component='a'
+        href='maito:contact@lumm.love'
+      >
+        <Typography
+          variant='body1'
+          sx={{ color: 'primary.main', fontWeight: 'bold' }}
+        >
+          contact@lumm.love
+        </Typography>
+        <Box
+          sx={{
+            position: 'relative',
+            top: '0.2em',
+            ml: 1,
+          }}
+        >
+          <FaEnvelope color={LUMM_RED} />
+        </Box>
+      </Box>
+      <Typography
+        variant='subtitle1'
+        color='primary'
+        textAlign='center'
+        mt='2em'
+      >
+        Avenue du Tir-Fédéral 25, 1024 Ecublens
+        <br />
+        Lümm © 2024
+      </Typography>
+    </Container>
   );
 }
 
