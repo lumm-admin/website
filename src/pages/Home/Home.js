@@ -23,6 +23,7 @@ import LogoTurningVideo from '../../assets/videos/logo-turning.mp4';
 import BackgroundDancingVideo from '../../assets/videos/background-dancing.mp4';
 import HourParagraph from '../../components/HourParagraph/HourParagraph';
 import SquarredLine from '../../components/SquarredLine/SquarredLine';
+import Map from '../../components/Map/Map';
 
 function HeroSection() {
   return (
@@ -166,6 +167,47 @@ function ProgramSection() {
           ))}
         </Box>
       </Container>
+      <EmptySpace height={80} />
+    </Box>
+  );
+}
+
+function PlaceSection() {
+  return (
+    <Box sx={{ width: '100%', backgroundColor: 'primary.main' }}>
+      <Typography
+        variant='h1'
+        sx={{
+          fontSize: '15vw',
+          lineHeight: '0.8',
+        }}
+        color='white'
+      >
+        Lieu
+      </Typography>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          width: '100%',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          gap: '2em',
+        }}
+      >
+        <Typography textAlign='right' minWidth='150px' color='white'>
+          <Link>La Rasude</Link> <br />
+          Place de la Gare 1<br />
+          1003 Lausanne
+          <br />
+          Suisse
+          <br />
+          <br />À 1 minute à pied en sortant de la gare
+        </Typography>
+        <Map />
+      </Container>
+      <EmptySpace height={80} />
     </Box>
   );
 }
@@ -176,6 +218,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <ProgramSection />
+      <PlaceSection />
     </>
   );
 }
