@@ -9,11 +9,12 @@ import {
 
 import Navbar from '../../components/Navbar/Navbar';
 import EmptySpace from '../../components/EmptySpace/EmptySpace';
-import BackgroundDancingVideo from '../../assets/videos/background-dancing.mp4';
 import HourParagraph from '../../components/HourParagraph/HourParagraph';
 import SquarredLine from '../../components/SquarredLine/SquarredLine';
 import Map from '../../components/Map/Map';
 import Footer from '../../components/Footer/Footer';
+
+import BackgroundDancingVideo from '../../assets/images/background-dancing.gif';
 
 function HeroSection() {
   return (
@@ -43,13 +44,13 @@ function HeroSection() {
             transform: 'translate(-50%, -50%)',
             objectFit: 'cover',
           }}
-          component='video'
+          component='img'
           autoPlay
           loop
           muted
-        >
-          <source src={BackgroundDancingVideo} />
-        </Box>
+          id='background-video'
+          src={BackgroundDancingVideo}
+        />
       </Box>
     </Box>
   );
