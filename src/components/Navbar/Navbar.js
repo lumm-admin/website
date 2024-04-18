@@ -4,13 +4,7 @@ import NavbarLogic from './NavbarLogic';
 
 import {
   AppBar,
-  Button,
   Container,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemText,
   SwipeableDrawer,
   Typography,
 } from '@mui/material';
@@ -19,7 +13,7 @@ import { HashLink as RouterLink } from 'react-router-hash-link';
 
 import LogoTurningVideo from '../../assets/images/giflumm.gif';
 
-function Navbar({}) {
+function Navbar() {
   const { drawerOpened, toggleDrawer } = NavbarLogic();
 
   const drawer = (

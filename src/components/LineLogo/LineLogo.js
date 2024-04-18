@@ -1,5 +1,4 @@
-import { Box, ButtonBase, Divider, Typography } from '@mui/material';
-import Palette from '../../theme/palette';
+import { Box, Typography } from '@mui/material';
 
 function LineLogo({ line }) {
   return (

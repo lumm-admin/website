@@ -1,25 +1,14 @@
 import React from 'react';
 
-import { HashLink, HashLink as RouterLink } from 'react-router-hash-link';
 import {
   Typography,
   Box,
-  TextField,
   Container,
-  Button,
-  Link,
-  Avatar,
-  ListItemAvatar,
-  List,
-  ListItemText,
-  ListItemButton,
-  Skeleton,
-  IconButton,
+  Link
 } from '@mui/material';
 
 import Navbar from '../../components/Navbar/Navbar';
 import EmptySpace from '../../components/EmptySpace/EmptySpace';
-import LogoTurningVideo from '../../assets/videos/logo-turning.mp4';
 import BackgroundDancingVideo from '../../assets/videos/background-dancing.mp4';
 import HourParagraph from '../../components/HourParagraph/HourParagraph';
 import SquarredLine from '../../components/SquarredLine/SquarredLine';
@@ -84,7 +73,6 @@ function ProgramSection() {
       sx={{
         position: 'relative',
         width: '100%',
-        position: 'relative',
         //top: '-0.8em',
       }}
       id='info'

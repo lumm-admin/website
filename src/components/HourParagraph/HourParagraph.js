@@ -1,7 +1,4 @@
-import { Box, ButtonBase, Divider, Typography } from '@mui/material';
-import Palette from '../../theme/palette';
-import LineLogo from '../LineLogo/LineLogo';
-import Helper from '../../helpers';
+import { Box, Typography } from '@mui/material';
 
 function HourParagraph({ rightAligned, hour, text, sx }) {
   return (
