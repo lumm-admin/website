@@ -2,12 +2,7 @@ import React from 'react';
 
 import NavbarLogic from './NavbarLogic';
 
-import {
-  AppBar,
-  Container,
-  SwipeableDrawer,
-  Typography,
-} from '@mui/material';
+import { AppBar, Container, SwipeableDrawer, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { HashLink as RouterLink } from 'react-router-hash-link';
 
@@ -90,12 +85,11 @@ function Navbar() {
           </Typography>
           <Box
             sx={{
-              width: '170px',
+              width: '300px',
               height: '110px',
-              top: '0',
-              left: '50%',
-              position: { xs: 'static', sm: 'absolute' },
-
+              left: { xs: '-2em', sm: '50%' },
+              top: '1em',
+              position: 'absolute',
               transform: { xs: '', sm: 'translateX(-50%)' },
             }}
           >
@@ -103,7 +97,6 @@ function Navbar() {
               style={{
                 width: '100%',
                 height: '100%',
-                overflow: 'hidden',
                 position: 'relative',
               }}
             >
