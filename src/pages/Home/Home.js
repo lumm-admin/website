@@ -62,12 +62,12 @@ function ProgramSection() {
       hour: '17',
       text: 'Ouverture des portes<br/>Stands artisans + expositions<br/>Bar Satellite<br/> Snacks Lümm',
     },
-    { hour: '18', text: 'Défilé par le pôle mode d’Artepoly : SWAG' },
+    { hour: '18', text: 'Défilé par le pôle mode d\'Artepoly : SWAG' },
     {
       hour: '21',
       text: "Ouverture de l'espace tripostal<br/>Début des DJ sets<br/>Bars + Snacks Lümm",
     },
-    { hour: '03', text: 'Fin de Lümm x SWAG' },
+    { hour: '03', text: 'Fin de Lümm' },
   ];
   return (
     <Box
