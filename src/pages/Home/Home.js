@@ -1,11 +1,6 @@
 import React from 'react';
 
-import {
-  Typography,
-  Box,
-  Container,
-  Link
-} from '@mui/material';
+import { Typography, Box, Container, Link } from '@mui/material';
 
 import Navbar from '../../components/Navbar/Navbar';
 import EmptySpace from '../../components/EmptySpace/EmptySpace';
@@ -52,6 +47,19 @@ function HeroSection() {
           src={BackgroundDancingVideo}
         />
       </Box>
+      <Typography
+        variant='h2'
+        color='white'
+        sx={{
+          position: 'absolute',
+          left: '50%',
+          bottom: 20,
+          transform: 'translate(-50%, 0%)',
+          textAlign: 'center',
+        }}
+      >
+        11.05 - Prix libres
+      </Typography>
     </Box>
   );
 }
@@ -59,15 +67,15 @@ function HeroSection() {
 function ProgramSection() {
   const hourProgram = [
     {
-      hour: '17',
+      hour: '17h00',
       text: 'Ouverture des portes<br/>Stands artisans + expositions<br/>Bar Satellite<br/> Snacks Lümm',
     },
-    { hour: '18', text: 'Défilé par le pôle mode d\'Artepoly : SWAG' },
+    { hour: '18h00', text: "Défilé par le pôle mode d'Artepoly : SWAG" },
     {
-      hour: '21',
+      hour: '21h00',
       text: "Ouverture de l'espace tripostal<br/>Début des DJ sets<br/>Bars + Snacks Lümm",
     },
-    { hour: '03', text: 'Fin de Lümm' },
+    { hour: '03h30', text: 'Fin de Lümm' },
   ];
   return (
     <Box
@@ -154,7 +162,7 @@ function ProgramSection() {
           }}
         >
           {hourProgram.map((el, id) => (
-            <HourParagraph {...el} sx={{}} />
+            <HourParagraph {...el} />
           ))}
         </Box>
       </Container>

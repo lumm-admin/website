@@ -10,6 +10,8 @@ const Map = () => {
   return (
     <Box
       sx={{
+        width: '100%',
+        maxWidth: 400,
         position: 'relative',
         clipPath: `polygon(
           0 0, 
@@ -21,16 +23,19 @@ const Map = () => {
         )`,
       }}
     >
-      <iframe
+      <Box
+        component='iframe'
         title='Google Map'
-        width='400'
-        height='400'
+        sx={{
+          width: '100%',
+          height: 400,
+        }}
         src={mapSrc}
         style={{ border: 0 }}
         allowFullScreen={true}
         aria-hidden='false'
         tabIndex='0'
-      ></iframe>
+      />
     </Box>
   );
 };

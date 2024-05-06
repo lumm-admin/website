@@ -11,8 +11,8 @@ function HourParagraph({ rightAligned, hour, text, sx }) {
         ...sx,
       }}
     >
-      <Typography variant='h2'>{hour + 'h00'}</Typography>
-      {text.split('<br/>').map((line, index) => (
+      <Typography variant='h2'>{hour}</Typography>
+      {text.split('<br/>').map((line) => (
         <Typography
           variant={'body1'}
           sx={{ textAlign: rightAligned ? 'right' : 'left' }}
