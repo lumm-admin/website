@@ -1,31 +1,29 @@
-import PropTypes from 'prop-types';
-import { FaHouse } from 'react-icons/fa6';
+//import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
 
-const Navbar = ({ pageName, hideHome }) => {
+const Navbar = () => {
   return (
-    <nav className='flex-centered w-full absolute top-0 left-0 border-b-1 border-b-gray-300'>
-      <div className='flex flex-row justify-start w-full max-w-4xl relative px-4 my-4'>
-        {!hideHome && (
+    <nav className='flex-centered w-full absolute top-0 left-0'>
+      <div className='flex flex-row flex-wrap justify-center w-full max-w-4xl relative px-4 my-8 gap-x-8 gap-y-2'>
+        {[
+          { to: '/#home', title: 'Accueil' },
+          { to: '/#about', title: "L'association" },
+          { to: '/shop', title: 'La Boutique' },
+          { to: '/contact', title: 'Contact' },
+        ].map(({ to, title }) => (
           <HashLink
-            className='text-2xl hover:cursor-pointer flex-centered p-2'
-            to='/'
+            key={title}
+            to={to}
+            className='text-3xl font-bold uppercase text-neutral-400 hover:text-neutral-300 font-[Oswald] shift-hover'
           >
-            <FaHouse />
+            {title}
           </HashLink>
-        )}
-        <h1 className='text-xl absolute translate-x-[-50%] top-0 left-[50%]'>
-          {pageName}
-        </h1>
-        <h1 className='!text-transparent text-xl'>{pageName}</h1>
+        ))}
       </div>
     </nav>
   );
 };
 
-Navbar.propTypes = {
-  pageName: PropTypes.string.isRequired,
-  hideHome: PropTypes.bool,
-};
+Navbar.propTypes = {};
 
 export default Navbar;

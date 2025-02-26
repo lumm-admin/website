@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap');
 @import 'tailwindcss';
 
 body {
@@ -8,12 +9,12 @@ body {
   @apply mt-6 px-4 py-2 rounded border;
 }
 
-.fly-hover {
+.shift-hover {
   @apply transition-all duration-200 ease-in-out relative;
 }
 
-.fly-hover:hover {
-  @apply transform -translate-y-0.5;
+.shift-hover:hover {
+  @apply transform translate-x-0.5;
 }
 
 .section-container {
@@ -28,8 +29,21 @@ body {
   @apply text-lg text-center;
 }
 
+p {
+  font-family: 'Atkinson Hyperlegible Mono', monospace;
+}
+
 h1 {
-  @apply text-4xl font-bold text-center text-gray-700;
+  @apply text-4xl font-bold;
+  font-family: 'Heebo', sans-serif;
+}
+h2 {
+  @apply text-3xl font-bold uppercase text-neutral-400;
+  font-family: 'Oswald', sans-serif;
+}
+h3 {
+  @apply text-3xl font-black uppercase;
+  font-family: 'Heebo', sans-serif;
 }
 
 h1.pb {
