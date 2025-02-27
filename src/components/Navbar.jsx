@@ -1,23 +1,34 @@
 //import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+  const links = [
+    { to: '/', title: 'Accueil' },
+    { to: '/about', title: "L'association" },
+    { to: '/shop', title: 'La Boutique' },
+    { to: '/contact', title: 'Contact' },
+  ];
+
   return (
     <nav className='flex-centered w-full absolute top-0 left-0'>
-      <div className='flex flex-row flex-wrap justify-center w-full max-w-4xl relative px-4 my-8 gap-x-8 gap-y-2'>
-        {[
-          { to: '/#home', title: 'Accueil' },
-          { to: '/#about', title: "L'association" },
-          { to: '/shop', title: 'La Boutique' },
-          { to: '/contact', title: 'Contact' },
-        ].map(({ to, title }) => (
-          <HashLink
-            key={title}
-            to={to}
-            className='text-3xl font-bold uppercase text-neutral-400 hover:text-neutral-300 font-[Oswald] shift-hover'
-          >
-            {title}
-          </HashLink>
+      <div className='flex flex-row flex-wrap justify-center w-full max-w-4xl relative px-4 my-8 gap-x-6 gap-y-2'>
+        {links.map(({ to, title }, id) => (
+          <>
+            <HashLink
+              key={title}
+              to={to}
+              className={`text-3xl font-bold uppercase font-[Oswald] shift-hover mix-blend-difference ${
+                location.pathname === to
+                  ? 'text-neutral-300'
+                  : 'text-neutral-400 hover:text-neutral-300'
+              }`}
+            >
+              {title}
+            </HashLink>
+            {id < links.length - 1 && <h2 className='hidden md:block'> / </h2>}
+          </>
         ))}
       </div>
     </nav>
