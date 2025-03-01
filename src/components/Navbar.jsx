@@ -12,14 +12,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='flex-centered w-full absolute top-0 left-0'>
+    <nav className='flex-centered w-full fixed top-0 left-0 z-10 '>
       <div className='flex flex-row flex-wrap justify-center w-full max-w-4xl relative px-4 my-8 gap-x-6 gap-y-2'>
         {links.map(({ to, title }, id) => (
           <>
             <HashLink
               key={title}
               to={to}
-              className={`text-3xl font-bold uppercase font-[Oswald] shift-hover mix-blend-difference ${
+              className={`text-3xl font-bold uppercase font-[Oswald] shift-hover bg-black px-1 ${
                 location.pathname === to
                   ? 'text-neutral-300'
                   : 'text-neutral-400 hover:text-neutral-300'
@@ -27,7 +27,9 @@ const Navbar = () => {
             >
               {title}
             </HashLink>
-            {id < links.length - 1 && <h2 className='hidden md:block'> / </h2>}
+            {id < links.length - 1 && (
+              <h2 className='hidden md:block bg-black px-1 '> / </h2>
+            )}
           </>
         ))}
       </div>
