@@ -9,7 +9,6 @@ const GlitchyWrapper = ({ children }) => {
     slice: {
       hueRotate: false,
     },
-    playMode: 'hover',
   });
 
   return <div ref={glitch.ref}>{children}</div>;
