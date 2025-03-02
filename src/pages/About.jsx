@@ -45,7 +45,7 @@ const About = () => {
       <Navbar />
       <div className='flex flex-col items-center md:hidden section-container first-section '>
         <img
-          src='/public/images/comite.jpg'
+          src='/images/comite.jpg'
           className='max-w-sm mt-[10vh] mb-8'
           ref={glitch.ref}
         />
@@ -53,7 +53,7 @@ const About = () => {
       </div>
       <div className='hidden md:flex w-full flex-row items-center space-between overflow-hidden'>
         <img
-          src='/public/images/comite.jpg'
+          src='/images/comite.jpg'
           className='h-screen absolute -top-5 -left-20 block'
           ref={glitch.ref}
         />
