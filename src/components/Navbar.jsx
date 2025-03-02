@@ -21,8 +21,8 @@ const Navbar = () => {
               to={to}
               className={`text-3xl font-bold uppercase font-[Oswald] shift-hover bg-black px-1 ${
                 location.pathname === to
-                  ? 'text-neutral-300'
-                  : 'text-neutral-400 hover:text-neutral-300'
+                  ? 'text-neutral-100'
+                  : 'text-neutral-300 hover:text-neutral-100'
               }`}
             >
               {title}
