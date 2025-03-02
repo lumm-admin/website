@@ -11,8 +11,8 @@ function Footer() {
         </Marquee>
       </div>
       <div className='flex flex-col px-9 max-w-5xl w-full'>
-        <div className='flex flex-row justify-between items-start my-10'>
-          <div className='flex flex-col justify-between items-start'>
+        <div className='flex flex-row justify-stretch items-start my-10'>
+          <div className='flex flex-col justify-between items-start flex-grow'>
             <h3>LÜMM</h3>
             <p>
               Avenue du Tir-Fédéral 25,
@@ -22,7 +22,7 @@ function Footer() {
               Suisse
             </p>
           </div>
-          <div className='flex flex-col justify-between items-end'>
+          <div className='flex flex-col justify-between items-end flex-grow'>
             <a
               href='mailto:contact@lumm.love'
               target='_blank'
