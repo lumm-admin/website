@@ -62,9 +62,11 @@ const ImageSection = ({
           }`}
         />
         <div
-          className={`flex flex-col items-center absolute top-1/2 ${
-            reverse ? '-translate-x-1/2 left-3/5' : 'translate-x-1/2 right-3/5'
-          } -translate-1/2 w-2/3 max-w-[650px] bg-black px-6 py-2`}
+          className={`flex flex-col absolute top-1/2 ${
+            reverse
+              ? 'items-start -translate-x-1/2 left-3/5'
+              : 'items-end translate-x-1/2 right-3/5'
+          } -translate-1/2 w-3/5 max-w-[650px] bg-black px-6 py-2`}
         >
           <p className='text-start text-md'>
             <h1 className='pb'>- {title} -</h1>
