@@ -37,19 +37,38 @@ p {
   font-family: 'Atkinson Hyperlegible Mono', monospace;
 }
 
-h1 {
-  @apply text-4xl font-bold;
-  font-family: 'Heebo', sans-serif;
+.text-link {
+  @apply underline text-neutral-200;
 }
-h2 {
+
+.text-link:hover {
+  @apply no-underline text-neutral-50;
+}
+
+h1,
+.h1 {
+  @apply text-4xl font-bold uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2,
+.h2 {
   @apply text-3xl font-bold uppercase text-neutral-400;
   font-family: 'Oswald', sans-serif;
 }
-h3 {
-  @apply text-3xl font-black uppercase;
-  font-family: 'Heebo', sans-serif;
+h3,
+.h3 {
+  @apply text-xl font-black uppercase;
+  font-family: 'Atkinson Hyperlegible Mono', sans-serif;
 }
 
-h1.pb {
+h4,
+.h4 {
+  @apply font-bold uppercase;
+  font-family: 'Atkinson Hyperlegible Mono', sans-serif;
+}
+
+h1.pb,
+.h1.pb {
   @apply mb-4;
 }
