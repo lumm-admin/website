@@ -10,7 +10,7 @@ function Footer() {
           </p>
         </Marquee>
       </div>
-      <div className='flex flex-col px-9 max-w-5xl w-full'>
+      <div className='flex flex-col px-5   max-w-5xl w-full'>
         <div className='flex flex-row justify-stretch items-start my-10'>
           <div className='flex flex-col justify-between items-start flex-grow'>
             <h3>LÜMM</h3>
@@ -32,12 +32,12 @@ function Footer() {
               -Email
             </a>
             <a
-              href='https://www.instagram.com/lumm.love/'
+              href='https://www.tiktok.com/@lumm.love'
               target='_blank'
               rel='noreferrer'
               className='mx-2 text-link h4'
             >
-              -Instagram
+              -tiktok
             </a>
             <a
               href='https://www.youtube.com/@LUMMMMM'
@@ -48,12 +48,12 @@ function Footer() {
               -Youtube
             </a>
             <a
-              href='https://www.tiktok.com/@lumm.love'
+              href='https://www.instagram.com/lumm.love/'
               target='_blank'
               rel='noreferrer'
               className='mx-2 text-link h4'
             >
-              -tiktok
+              -Instagram
             </a>
           </div>
         </div>

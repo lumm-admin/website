@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='flex-centered w-full fixed top-0 left-0 z-10 '>
+    <nav className='flex-centered w-screen fixed top-0 left-0 z-10 '>
       <div className='flex flex-row flex-wrap justify-center w-full max-w-4xl relative px-4 my-8 gap-x-6 gap-y-2'>
         {links.map(({ to, title }, id) => (
           <>
