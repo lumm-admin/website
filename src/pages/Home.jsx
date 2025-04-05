@@ -13,7 +13,7 @@ const Home = () => {
           muted
           className='h-full min-w-[600px] w-2/3 object-contain'
         >
-          <source src='/public/videos/anim-logo-home.mp4' type='video/mp4' />
+          <source src='/videos/anim-logo-home.mp4' type='video/mp4' />
         </video>
       </div>
       <Footer />
