@@ -7,7 +7,7 @@ const Navbar = () => {
   const links = [
     { to: '/', title: 'Accueil' },
     { to: '/about', title: "L'association" },
-    { to: '/shop', title: 'La Boutique' },
+    //{ to: '/shop', title: 'La Boutique' },
     { to: '/contact', title: 'Contact' },
   ];
 
