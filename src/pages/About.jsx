@@ -119,7 +119,7 @@ const About = () => {
       </ImageSection>
       <ImageSection
         title='Kerem Yazici'
-        imgSrc='/images/louis.jpg'
+        imgSrc='/images/kerem.jpeg'
         height='50vh'
       >
         <ul>
@@ -172,6 +172,25 @@ const About = () => {
             /{' '}
             <a href='mailto:kevan@lumm.love' className='text-link'>
               kevan@lumm.love
+            </a>
+          </li>
+        </ul>
+      </ImageSection>
+      <ImageSection
+        title='Anatole Behague'
+        imgSrc='/images/nut.jpeg'
+        height='50vh'
+        reverse
+      >
+        <ul>
+          <li>
+            / <strong>Stagiaire</strong>
+          </li>
+
+          <li>
+            /{' '}
+            <a href='mailto:anatole@lumm.love' className='text-link'>
+              anatole@lumm.love
             </a>
           </li>
         </ul>
