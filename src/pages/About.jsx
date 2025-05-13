@@ -85,7 +85,7 @@ const About = () => {
             / <strong>Secrétaire</strong> & membre fondateur.
           </li>
           <li>
-            / Pro de <strong>l’administration</strong>
+            / Responsable <strong>transports</strong>
           </li>
           <li>
             /{' '}
@@ -191,6 +191,20 @@ const About = () => {
             /{' '}
             <a href='mailto:anatole@lumm.love' className='text-link'>
               anatole@lumm.love
+            </a>
+          </li>
+        </ul>
+      </ImageSection>
+      <ImageSection title='Tabatha Rytz' imgSrc='/images/tab.jpg' height='50vh'>
+        <ul>
+          <li>
+            / <strong>Stagiaire</strong>
+          </li>
+
+          <li>
+            /{' '}
+            <a href='mailto:tabatha@lumm.love' className='text-link'>
+              tabatha@lumm.love
             </a>
           </li>
         </ul>

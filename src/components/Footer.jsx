@@ -10,7 +10,7 @@ function Footer() {
           </p>
         </Marquee>
       </div>
-      <div className='flex flex-col px-5   max-w-5xl w-full'>
+      <div className='flex flex-col px-5 max-w-5xl w-full'>
         <div className='flex flex-row justify-stretch items-start my-10'>
           <div className='flex flex-col justify-between items-start flex-grow'>
             <h3>LÜMM</h3>
@@ -58,7 +58,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col sm:flex-row justify-between items-start px-9 pb-1 max-w-5xl text-center w-full'>
+      <div className='flex flex-col sm:flex-row justify-between items-start px-5 pb-1 max-w-5xl text-center w-full'>
         <p className='font-inkination uppercase text-[0.8rem]'>
           Copyright © LÜMM 2025
         </p>
