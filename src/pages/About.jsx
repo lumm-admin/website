@@ -36,8 +36,8 @@ const About = () => {
             / <strong>Co-président</strong> & membre fondateur
           </li>
           <li>
-            / Responsable <strong>Communication</strong> et{' '}
-            <strong>Visuels</strong>
+            / Responsable <strong>Visuels</strong> &{' '}
+            <strong>Son</strong>
           </li>
           <li>
             / <strong>VJing</strong>
@@ -61,8 +61,8 @@ const About = () => {
             / <strong>Co-président</strong> & membre fondateur
           </li>
           <li>
-            / Responsable <strong>Son</strong>, <strong>Programmation</strong> &{' '}
-            <strong>Location</strong>
+            / Responsable <strong>Web</strong> &{' '}
+            <strong>Visuels</strong>
           </li>
           <li>
             / <strong>VJing</strong>
@@ -85,7 +85,8 @@ const About = () => {
             / <strong>Secrétaire</strong> & membre fondateur.
           </li>
           <li>
-            / Responsable <strong>transports</strong>
+            / Responsable <strong>Transports</strong> &{' '}
+            <strong>Merchandising</strong>
           </li>
           <li>
             /{' '}
@@ -106,7 +107,7 @@ const About = () => {
             / <strong>Trésorier</strong> & membre fondateur
           </li>
           <li>
-            / Responsable <strong>Web</strong>, <strong>Staff</strong> &{' '}
+            / Responsable <strong>Staff</strong> &{' '}
             <strong>Opérations</strong>
           </li>
           <li>
@@ -149,7 +150,7 @@ const About = () => {
             / <strong>Membre fondateur</strong>
           </li>
           <li>
-            / Responsable <strong>Bar</strong> & <strong>Nourriture</strong>
+            / Responsable <strong>Bar</strong>
           </li>
           <li>
             /{' '}
@@ -165,8 +166,7 @@ const About = () => {
             / <strong>Membre fondateur</strong>
           </li>
           <li>
-            / Responsable <strong>Merchandising</strong> &{' '}
-            <strong>Sponsoring</strong>
+            / Responsable <strong>Sponsoring</strong>
           </li>
           <li>
             /{' '}
@@ -184,9 +184,11 @@ const About = () => {
       >
         <ul>
           <li>
-            / <strong>Stagiaire</strong>
+            / <strong>Trésorier</strong>
           </li>
-
+          <li>
+            / Responsable <strong>Programmation</strong>
+          </li>
           <li>
             /{' '}
             <a href='mailto:anatole@lumm.love' className='text-link'>
@@ -198,9 +200,9 @@ const About = () => {
       <ImageSection title='Tabatha Rytz' imgSrc='/images/tab.jpg' height='50vh'>
         <ul>
           <li>
-            / <strong>Stagiaire</strong>
+            / Responsable <strong>Décoration</strong> &{' '}
+            <strong>Nourriture</strong>
           </li>
-
           <li>
             /{' '}
             <a href='mailto:tabatha@lumm.love' className='text-link'>
